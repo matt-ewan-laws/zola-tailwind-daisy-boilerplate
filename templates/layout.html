@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js h-full" lang="" data-theme="cupcake">
+
+<head>
+  {% block head %}
+    <meta charset="utf-8">
+    <title>
+      {% block title %}{% endblock title %}
+    </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="stylesheet" href="/main.css">
+    <script src="/main.js"></script>
+  {% endblock head %}
+
+</head>
+
+<body class="h-full flex flex-col">
+  <a class="l-50% absolute -translate-y-full h-8 left-1/2 p-2 transition-all focus:translate-y-0" href="#main">
+    Skip to content
+  </a>
+
+  <nav class="">
+    {% include "partials/nav.html" %}
+  </nav>
+
+  <!-- Add your site or application content here -->
+  {% block body %}
+  {% endblock body %}
+
+  <footer class="min-h-24 mt-auto">
+    &copy; Matt 2023
+  </footer>
+  <!-- <script src="https://www.google-analytics.com/analytics.js" async></script> -->
+</body>
+
+</html>

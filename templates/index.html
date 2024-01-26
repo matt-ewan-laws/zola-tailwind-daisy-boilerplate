@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}{{ section.title }}{% endblock title %}
+
+{% block head %}
+    {{ super() }}
+{% endblock head %}
+
+{% block body %}
+<main class="mx-auto my-2 px-2 w-full md:w-8/12 lg:w-6/12 lg:my-4">
+
+  <h1 class="font-bold text-4xl mb-4">{{ section.title }}</h1>
+
+  <div class="page-content">
+    {{ section.content | safe }}
+  </div>
+</main>
+{% endblock body %}

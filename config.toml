@@ -1,6 +1,6 @@
-title = "Projects"
+title = "Matrix Docs"
 # The URL the site will be built for
-base_url = "https://projects-53y.pages.dev"
+base_url = "https://matrix-docs.pages.dev"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false

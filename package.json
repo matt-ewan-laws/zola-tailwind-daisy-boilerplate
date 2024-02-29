@@ -4,13 +4,16 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "parcel watch src/* --dist-dir static --no-source-maps",
-    "build": "parcel build src/* --dist-dir static --no-source-maps && zola build"
+    "watch": "concurrently --kill-others \"parcel watch src/* --dist-dir static --no-source-maps\" \"./bin/watch\"",
+    "watch-parcel": "parcel watch src/* --dist-dir static --no-source-maps",
+    "build-parcel": "parcel build src/* --dist-dir static --no-source-maps",
+    "build": "parcel build src/* --dist-dir static --no-source-maps && ./bin/build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
+    "concurrently": "^8.2.2",
     "daisyui": "^4.6.0",
     "parcel": "^2.11.0",
     "postcss": "^8.4.33",

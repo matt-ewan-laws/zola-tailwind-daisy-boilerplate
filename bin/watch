@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Get the operating system name
+os_name=$(uname -s)
+
+# Check if the OS is macOS or Linux
+if [ "$os_name" != "Darwin" ] && [ "$os_name" != "Linux" ]; then
+    echo "Unsupported operating system: $os_name"
+    exit 1
+fi
+
+
+# If the OS is macOS or Linux
+echo "$os_name detected"
+
+./bin/zola-$os_name serve

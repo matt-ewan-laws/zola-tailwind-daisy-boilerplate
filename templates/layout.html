@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js h-full" lang="en" data-theme="cupcake">
+<html class="no-js h-full" lang="en" data-theme="{{ config.extra.default_theme }}">
 
 <head>
   {% block head %}
@@ -19,6 +19,8 @@
     <link rel="apple-touch-icon" href="icon.png">
 
     <link rel="stylesheet" href="/main.css">
+
+    <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
     <script src="/main.js"></script>
   {% endblock head %}
 
@@ -37,8 +39,13 @@
   {% block body %}
   {% endblock body %}
 
-  <footer class="min-h-24 mt-auto">
-    &copy; Matt 2023
+  <footer class="bg-primary text-primary-content min-h-16 flex mt-auto items-center justify-between">
+    <div></div>
+    <div>
+      &copy; Matt 2024
+    </div>
+    
+    <div></div>
   </footer>
   <!-- <script src="https://www.google-analytics.com/analytics.js" async></script> -->
 </body>

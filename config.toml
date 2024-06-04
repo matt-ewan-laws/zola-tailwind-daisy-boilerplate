@@ -1,6 +1,6 @@
-title = "Matrix Docs"
+title = "World Builder"
 # The URL the site will be built for
-base_url = "https://matrix-docs.pages.dev"
+base_url = "https://world-builder.pages.dev"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
@@ -8,10 +8,18 @@ compile_sass = false
 # Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
 
+# Is the place a continent, city, town, .. etc?
+#taxonomies = [
+    #{ name = "place_type", feed = true }
+#]
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 
 [extra]
+
+local = true
+default_theme = "winter"
 # Put all your custom variables here

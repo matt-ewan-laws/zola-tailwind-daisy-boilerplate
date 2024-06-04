@@ -5,7 +5,13 @@ document.addEventListener('DOMContentLoaded', function() {
     el: document.querySelector('#editor'),
     height: '500px',
     initialEditType: 'wysiwyg',
-    previewStyle: 'vertical'
+    previewStyle: 'vertical',
+    events: {
+      change: editorChanged
+    }
   });
 
+  function editorChanged() {
+    // console.log(editor.getMarkdown())
+  }
 })

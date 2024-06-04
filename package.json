@@ -5,8 +5,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "parcel watch src/* --dist-dir static --no-source-maps",
-    "serve": "./bin/watch",
-    "watch-parcel": "parcel watch src/* --dist-dir static --no-source-maps",
     "build-parcel": "parcel build src/* --dist-dir static --no-source-maps",
     "build": "parcel build src/* --dist-dir static --no-source-maps && ./bin/build"
   },
@@ -19,5 +17,12 @@
     "parcel": "^2.11.0",
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+    "@milkdown/core": "^7.3.6",
+    "@milkdown/preset-commonmark": "^7.3.6",
+    "@milkdown/theme-nord": "^7.3.6",
+    "@toast-ui/editor": "^3.2.2",
+    "woofmark": "^4.2.6"
   }
 }

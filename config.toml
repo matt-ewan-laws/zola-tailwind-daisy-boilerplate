@@ -21,5 +21,5 @@ highlight_code = false
 [extra]
 
 local = true
-default_theme = "winter"
+default_theme = "retro"
 # Put all your custom variables here

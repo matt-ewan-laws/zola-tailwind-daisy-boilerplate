@@ -7,11 +7,19 @@
 {% endblock head %}
 
 {% block body %}
-<main class="mx-auto container pt-10">
-  <h1 class="font-bold text-4xl mb-4">{{ config.title }}</h1>
+<main id="main" class="font-display h-full">
+  <div class="hero bg-base-200 min-h-100 drop-shadow-xl">
+    <div class="hero-content text-center">
+      <div class="max-w-md">
+        <h1 class="text-5xl font-bold mb-8">{{ config.title }}</h1>
 
-  <div class="page-content">
-    {{ section.content | safe }}
+        {{ section.content | safe }}
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-secondary h-full px-4 md:px-20 lg:px-40">
+    <div class="bg-base-100 mx-auto h-full drop-shadow-xl"></div>
   </div>
 </main>
 {% endblock body %}
